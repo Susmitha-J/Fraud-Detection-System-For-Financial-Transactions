@@ -1,0 +1,21 @@
+# Data (do not commit Kaggle files)
+data/
+*.csv
+
+# Model artifacts (optional: don't commit trained models)
+models/
+*.joblib
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
