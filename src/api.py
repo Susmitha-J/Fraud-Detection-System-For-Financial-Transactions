@@ -17,6 +17,10 @@ class TransactionPayload(BaseModel):
     # Send arbitrary key-value pairs (must match feature names)
     features: Dict[str, Any]
 
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "Fraud API is running", "docs": "/docs"}
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
